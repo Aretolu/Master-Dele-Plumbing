@@ -1,6 +1,7 @@
 /* Desktop Styles (768px and above) */
 @media (min-width: 768px) {
   .hero {
+    height: 79vh;
     padding: 8rem 2rem 5rem;
     text-align: center;
     display: flex;
@@ -33,13 +34,23 @@
 
   .features-grid,
   .services-grid,
-  .reviews-grid,
-  .gallery-gird {
+  .reviews-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .gallery-gird {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .gallery-gird img {
+    width: 100%;
+    height: 300px;
   }
 
   .services-grid {
